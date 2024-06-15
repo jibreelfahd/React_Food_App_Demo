@@ -1,0 +1,57 @@
+.cart--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4d1601;
+  padding: 0.65rem 3rem;
+  border-radius: 25px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cart--button:hover,
+.cart--button:active {
+  background-color: #2c0d00;
+}
+
+.cart__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  margin-left: 1rem;
+  font-weight: bold;
+  background: #b94517;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #92320c;
+}
+
+.bump {
+  animation: bump 300ms ease-in-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
