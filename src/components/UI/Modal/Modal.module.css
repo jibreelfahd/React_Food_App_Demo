@@ -1,0 +1,31 @@
+.overlay {
+  top: 20vh;
+  left: 30%;
+  width: 40%;
+  max-width: 60rem;
+  position: fixed;
+  z-index: 100;
+  margin: 2rem auto;
+  animation: modal-transition 600ms ease-out forwards;
+}
+
+.backdrop {
+  position: fixed;
+  background:  rgba(0, 0, 0, 0.75);
+  height: 100vh;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+@keyframes modal-transition {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
