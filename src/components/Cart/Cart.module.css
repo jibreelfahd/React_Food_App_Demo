@@ -1,7 +1,7 @@
 .list-items {
   list-style-type: none;
-  margin: 0;
-  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,6 +38,42 @@
 }
 
 .list--control button:hover {
+  background: #92320c;
+  color: #fff;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.actions {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.actions button {
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #b94517;
+  border-radius: 25px;
+}
+
+.actions .order {
+  margin-left: 0.5rem;
+  background: #92320c;
+  color: #fff;
+
+}
+
+.actions .close {
+  color: #b94517;
+}
+
+
+.actions .close:hover {
   background: #92320c;
   color: #fff;
 }

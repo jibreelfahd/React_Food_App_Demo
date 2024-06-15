@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import Card from "../Card/Card";
 import styles from "./Modal.module.css";
 
-const Backdrop = () => {
-  return <div className={styles.backdrop} />;
+const Backdrop = (props) => {
+  return <div className={styles.backdrop} onClick={props.onHide}/>;
 };
 
 const ModalOverlay = (props) => {
@@ -15,12 +15,12 @@ const Modal = (props) => {
   return (
     <>
       {ReactDOM.createPortal(
-        <Backdrop />,
+        <Backdrop onHide={props.onHideCart}/>,
         document.getElementById("backdrop-overlay")
       )}
 
       {ReactDOM.createPortal(
-        <ModalOverlay>{props.children}</ModalOverlay>,
+        <ModalOverlay onHide={props.onHideCart}>{props.children}</ModalOverlay>,
         document.getElementById("modal-overlay")
       )}
     </>

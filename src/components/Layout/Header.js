@@ -5,12 +5,12 @@ import HeaderCartButton from "./HeaderCartButton";
 
 import styles from "./Header.module.css";
 
-const Header = (props) => {
+const Header = ({ onShow }) => {
   return (
     <div>
       <div className={styles.header}>
         <h1>SuberbMeals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onShowCart={onShow }/>
       </div>
       <div className={styles.header__image}>
         <img src={mealsImage} alt="a table of meals" />

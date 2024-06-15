@@ -32,17 +32,17 @@ const listItems = LISTDATA.map((meals) => (
   </li>
 ));
 
-const Cart = (props) => {
+const Cart = ({ onHide}) => {
   return (
-    <Modal>
+    <Modal onHideCart={onHide}>
       {listItems}
       <div className={styles.control}>
         <span>Total Amount</span>
         <span>$99.99</span>
         </div>
       <div className={styles.actions}>
-        <button>Order</button>
-        <button>Close</button>
+        <button className={styles.close} onClick={onHide}>Close</button>
+        <button className={styles.order}>Order</button>
       </div>
     </Modal>
   );
