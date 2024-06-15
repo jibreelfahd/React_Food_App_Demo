@@ -1,0 +1,43 @@
+.list-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #92320c;
+}
+
+.list-items h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1.35rem;
+}
+
+.list__price {
+  margin-right: 2rem;
+  color: #b94517;
+}
+
+.list__amount {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+}
+
+.list--control button {
+  margin-left: 0.5rem;
+  border: 1px solid #b94517;
+  border-radius: 4px;
+  padding: 0.1rem 0.9rem;
+  color: #92320c;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.list--control button:hover {
+  background: #92320c;
+  color: #fff;
+}
