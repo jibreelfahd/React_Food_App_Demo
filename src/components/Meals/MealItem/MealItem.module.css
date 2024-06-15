@@ -1,0 +1,24 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin: 0.75rem;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.cart h3{
+  margin: 0 0 0.2rem 0;
+}
+
+.cart .cart--description {
+  font-style: italic;
+  margin: -0.3rem 0;
+}
+
+.cart .cart--price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ad5502;
+  margin-top: 0.25rem;
+}

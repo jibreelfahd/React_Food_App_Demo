@@ -1,0 +1,21 @@
+.meal--form  {
+  text-align: right;
+}
+
+.meal--form button {
+  border: 1px solid #8a2b06;
+  padding: 0.25rem 2rem;
+  background: #8a2b06;
+  color: #fff;
+  border-radius: 25px;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.meal--form button:active,
+.meal--form button:hover {
+  background-color: #641e03;
+  border-color: #641e03;
+}

@@ -1,0 +1,25 @@
+.cart--items {
+  margin: 1.5rem auto;
+  width: 50rem;
+  max-width: 90%;
+  animation: meals-appear 1s ease-out forwards;
+  padding: 0.75rem 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,19 @@
+.content {
+  background: #383838;
+  margin: auto;
+  margin-top: -10rem;
+  width: 90%;
+  max-width: 40rem;
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  box-shadow:  0 2px 8px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border-radius: 14px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
