@@ -33,7 +33,15 @@ const AvailableMeals = (props) => {
     },
   ];
 
-  const mealItem = DATA.map((meals) => <MealItem key={meals.id}/>);
+  const mealItem = DATA.map((meals) => (
+    <MealItem
+      id={meals.id}
+      key={meals.id}
+      name={meals.name}
+      description={meals.description}
+      price={meals.price}
+    />
+  ));
 
   return (
     <section className={styles["cart--items"]}>
