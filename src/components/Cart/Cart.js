@@ -9,11 +9,11 @@ const Cart = ({ onHide }) => {
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
 
-  const addItemHandler = item => {
-    cartCtx.addItems({...item, amount: 1 });
+  const addItemHandler = (item) => {
+    cartCtx.addItems({ ...item, amount: 1 });
   };
-  const removeItemHandler = id => {
-    cartCtx.deleteItems(id)
+  const removeItemHandler = (id) => {
+    cartCtx.deleteItems(id);
   };
 
   const listItems = cartCtx.items.map((meals) => (
