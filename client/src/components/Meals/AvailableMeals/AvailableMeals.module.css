@@ -12,6 +12,17 @@ ul {
   margin: 0;
 }
 
+.error {
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+}
+
+.loading {
+  text-align: center;
+  color: #fff;
+}
+
 @keyframes meals-appear {
   from {
     opacity: 0;

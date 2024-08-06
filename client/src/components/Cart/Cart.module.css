@@ -1,7 +1,7 @@
 .list {
   padding: 0;
   margin: 0;
-  max-height: 20rem;
+  max-height: 15rem;
   overflow: auto;
 }
 
@@ -72,13 +72,11 @@
   margin-left: 0.5rem;
   background: #92320c;
   color: #fff;
-
 }
 
 .actions .close {
   color: #b94517;
 }
-
 
 .actions .close:hover {
   background: #92320c;

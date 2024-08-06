@@ -1,0 +1,57 @@
+.form {
+  max-height: 15rem;
+  overflow-y: scroll;
+  margin: 1rem 0;
+}
+
+.form-inputs {
+  margin-bottom: 1rem;
+}
+
+.form-inputs label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.form-inputs input {
+  width: 75%;
+  border: 1px solid #ccc;
+  font: inherit;
+  border-radius: 3px;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  border: 1px solid #b94517;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.actions .btn__close {
+  color: #b94517;
+  margin-right: 0.5rem;
+}
+
+.actions .btn__close:hover {
+  background: #92320c;
+  color: #fff;
+}
+
+.actions .btn__confirm {
+  background: #92320c;
+  color: #fff;
+}
+
+.invalid label {
+  color: #ca3e51;
+}
+
+.invalid input {
+  border-color: #aa0b20;
+  background: #ffeff1;
+}
